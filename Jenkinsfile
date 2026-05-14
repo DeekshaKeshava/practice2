@@ -11,8 +11,10 @@ pipeline {
 
         stage('Deploy') {
             steps {
+
                 bat 'mkdir C:\\DeployHTML'
-                bat 'copy index.html C:\\DeployHTML'
+
+                bat 'copy D:\\Prac\\index.html C:\\DeployHTML'
             }
         }
     }
