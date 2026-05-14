@@ -5,16 +5,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Building Project'
+                echo 'Building HTML Project'
             }
         }
 
-        stage('Deploy') {
+        stage('View HTML File') {
             steps {
-
-                bat 'mkdir C:\\DeployHTML'
-
-                bat 'copy D:\\Prac\\index.html C:\\DeployHTML'
+                bat 'type index.html'
             }
         }
     }
